@@ -1,0 +1,288 @@
+{
+	"info": {
+		"_postman_id": "59713bbc-643b-4e8b-b8e4-f1f35a3b8296",
+		"name": "s3-Test-Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30465889"
+	},
+	"item": [
+		{
+			"name": "getObject",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/s3/get-object/bucketName/key",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"s3",
+						"get-object",
+						"bucketName",
+						"key"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getObject",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/s3/get-object/bucketName/key",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"s3",
+								"get-object",
+								"bucketName",
+								"key"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1205"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4b5-BDxN4Yalo4fWyq0abMl+6APQUa4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Nov 2023 12:12:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_readableState\": {\n        \"objectMode\": false,\n        \"highWaterMark\": 16384,\n        \"buffer\": {\n            \"head\": null,\n            \"tail\": null,\n            \"length\": 0\n        },\n        \"length\": 0,\n        \"pipes\": [],\n        \"flowing\": null,\n        \"ended\": false,\n        \"endEmitted\": false,\n        \"reading\": false,\n        \"constructed\": true,\n        \"sync\": false,\n        \"needReadable\": false,\n        \"emittedReadable\": false,\n        \"readableListening\": false,\n        \"resumeScheduled\": false,\n        \"errorEmitted\": false,\n        \"emitClose\": true,\n        \"autoDestroy\": true,\n        \"destroyed\": false,\n        \"errored\": null,\n        \"closed\": false,\n        \"closeEmitted\": false,\n        \"defaultEncoding\": \"utf8\",\n        \"awaitDrainWriters\": null,\n        \"multiAwaitDrain\": false,\n        \"readingMore\": false,\n        \"dataEmitted\": false,\n        \"decoder\": null,\n        \"encoding\": null\n    },\n    \"_events\": {},\n    \"_eventsCount\": 1,\n    \"_writableState\": {\n        \"objectMode\": false,\n        \"highWaterMark\": 16384,\n        \"finalCalled\": false,\n        \"needDrain\": false,\n        \"ending\": false,\n        \"ended\": false,\n        \"finished\": false,\n        \"destroyed\": false,\n        \"decodeStrings\": true,\n        \"defaultEncoding\": \"utf8\",\n        \"length\": 0,\n        \"writing\": false,\n        \"corked\": 0,\n        \"sync\": true,\n        \"bufferProcessing\": false,\n        \"writecb\": null,\n        \"writelen\": 0,\n        \"afterWriteTickInfo\": null,\n        \"buffered\": [],\n        \"bufferedIndex\": 0,\n        \"allBuffers\": true,\n        \"allNoop\": true,\n        \"pendingcb\": 0,\n        \"constructed\": true,\n        \"prefinished\": false,\n        \"errorEmitted\": false,\n        \"emitClose\": true,\n        \"autoDestroy\": true,\n        \"errored\": null,\n        \"closed\": false,\n        \"closeEmitted\": false\n    },\n    \"allowHalfOpen\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "putObject",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/s3/put-object/dfdfd/dfddfdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"s3",
+						"put-object",
+						"dfdfd",
+						"dfddfdf"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "putObject",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/s3/put-object/bucketName/key",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"s3",
+								"put-object",
+								"bucketName",
+								"key"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "254"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"fe-fQYMkPdVIz9a5xmCdIA4Ei2UuQE\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Nov 2023 12:12:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 403,\n    \"error\": \"MultipleValidationErrors: There were 2 validation errors:\\n* MissingRequiredParameter: Missing required key 'Key' in params\\n* InvalidParameterType: Expected params.Body to be a string, Buffer, Stream, Blob, or typed array object\"\n}"
+				}
+			]
+		},
+		{
+			"name": "deleteObject",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/s3/delete-object/dfdfd/dfddfdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"s3",
+						"delete-object",
+						"dfdfd",
+						"dfddfdf"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteObject",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/s3/delete-object/bucketname/key",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"s3",
+								"delete-object",
+								"bucketname",
+								"key"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "87"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"57-xv9w0GIuENmQqMNVhVGf5hRJ0fk\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Nov 2023 12:12:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 403,\n    \"error\": \"MissingRequiredParameter: Missing required key 'Key' in params\"\n}"
+				}
+			]
+		},
+		{
+			"name": "listObjects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/s3/list-objects/bucketname",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"s3",
+						"list-objects",
+						"bucketname"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listBuckets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/s3/list-buckets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"s3",
+						"list-buckets"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
